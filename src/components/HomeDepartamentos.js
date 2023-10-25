@@ -50,7 +50,11 @@ state={
 
               <th>Localidad</th>
               <th>Nombre</th>
-              <th></th>
+              <th>Informacion</th>
+              <th>Borrar</th>
+              <th>Modificacion</th>
+
+
               
             </tr>
           </thead>
@@ -60,8 +64,10 @@ state={
 
                 <td>{departamento.localidad}</td>
                 <td>{departamento.nombre}</td>
-                <td>{<NavLink to={"/detalledepartamento/"+departamento.numero+"/"+departamento.nombre+"/"+departamento.localidad}>Detalles</NavLink>}</td>
-                
+                <td>{<NavLink to={"/detalledepartamento/"+departamento.numero+"/"+departamento.nombre+"/"+departamento.localidad} className="btn btn-primary">Detalles</NavLink>}</td>
+                <td>{<NavLink to={"/eliminardepartamento/"+departamento.numero} className="btn btn-danger">Eliminar</NavLink>}</td>
+                <td>{<NavLink to={"/modificardepartamento/"+departamento.numero} className="btn btn-warning">Modificar</NavLink>}</td>
+
                 
                 </tr>
             ))}

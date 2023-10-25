@@ -11,7 +11,7 @@ export default class DetalleDepartamento extends Component {
     return (
       <div>
         <h1>DetalleDepartamento {this.props.iddepartamento}</h1>
-        <NavLink to={"/"}>Volver</NavLink>
+        <NavLink to={"/"} className="btn btn-success">Volver</NavLink>
 
         <table className="table table-striped">
           <thead>
